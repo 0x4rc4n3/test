@@ -17,12 +17,10 @@ services:
       - ./apex-pq/pqc-identity/wallet-extension/seeds.json:/app/wallet-extension/seeds.json
 
   zest-suites:
-    build:
-      context: ./zest-suites
-      dockerfile: Dockerfile
+    image: nginx:alpine
     container_name: zest-suites-portal
     restart: unless-stopped
     ports:
-      - "8081:8081"
-    environment:
-      - PORT=8081
+      - "8081:80"
+    volumes:
+      - ./zest-suites:/usr/share/nginx/html:ro
