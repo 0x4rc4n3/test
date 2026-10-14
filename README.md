@@ -16,8 +16,8 @@ On a fresh Kali Linux installation, run:
 # Update package lists
 sudo apt update
 
-# Install Docker engine and Compose plugin
-sudo apt install -y docker.io docker-compose-plugin
+# Install Docker engine and Compose on Kali Linux
+sudo apt install -y docker.io docker-compose
 
 # Start and enable the Docker service
 sudo systemctl enable --now docker

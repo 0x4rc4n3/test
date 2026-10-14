@@ -41,7 +41,7 @@ elif command -v podman-compose >/dev/null 2>&1; then
     COMPOSE="podman-compose"
 else
     echo "[!] Docker Compose not detected. Please install Docker & Docker Compose first."
-    echo "    On Kali/Debian: sudo apt-get update && sudo apt-get install -y docker.io docker-compose-plugin"
+    echo "    On Kali Linux: sudo apt update && sudo apt install -y docker.io docker-compose"
     exit 1
 fi
 
