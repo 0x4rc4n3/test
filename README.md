@@ -46,12 +46,16 @@ cd test
 
 ### Step 3: Run the Multi-Project Launcher
 
-Launch using the included interactive startup script:
+Launch using the included interactive startup script (requires `sudo` for Docker privileges on Kali):
 
 ```bash
 chmod +x start.sh
-./start.sh
+sudo ./start.sh
 ```
+
+> **⚡ Startup Speed: Will it always take time?**
+> - **First time:** Docker downloads the base image (`python:3.11-slim`), installs packages, and compiles the environment. This takes ~1–2 minutes.
+> - **Every time after:** **Takes only 1 to 2 seconds!** Docker caches all images and build layers. Once built, launching containers with `sudo ./start.sh` is near-instantaneous.
 
 You will see an interactive prompt:
 ```text

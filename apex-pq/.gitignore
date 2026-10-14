@@ -30,11 +30,8 @@ instance/
 htmlcov/
 .DS_Store
 
-# Project specific database state (databases are generated & anchored on initial boot)
-pqc-identity/*.db
-pqc-identity/db/*.db
-pqc-identity/database.db
-pqc-identity/*.zip
+!liboqs/install/usr/local/lib/liboqs.so*
+!pqc-identity/db/*.db
 pqc-identity/__pycache__/
 *.log
 videos/
